@@ -1,0 +1,96 @@
+body,
+input {
+  font-family: Poppins, sans-serif;
+}
+body {
+  margin: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("./resources/team_reunion.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header {
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+header h1,
+header p {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+#content {
+  color: white;
+  width: 100%;
+  margin: auto;
+}
+main {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4vh 2vw;
+}
+#name,
+#email,
+#number,
+#dropdown-container,
+#radiobutton-container,
+#checkbox-container,
+#textarea-container {
+  width: 100%;
+  margin-bottom: 3vh;
+  box-sizing: border-box;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select#dropdown {
+  padding: 0.5rem 1rem;
+  border-radius: 2%;
+  border-color: rgba(0, 0, 0, 0.7);
+}
+#radiobutton-container label,
+#checkbox-container label {
+  line-height: 2em;
+}
+#survey-form p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#dropdown {
+  width: 100%;
+}
+#comments {
+  width: 100%;
+  max-width: 100%;
+  resize: none;
+  overflow: auto;
+}
+#submit {
+  border: none;
+  width: 100%;
+  padding: 14px 28px;
+  cursor: pointer;
+  color: white;
+  background-color: #4caf50;
+}
+#submit:hover {
+  background-color: #46a049;
+}
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  main {
+    border-radius: 2%;
+  }
+  #content {
+    width: 50%;
+    margin: auto;
+  }
+}
